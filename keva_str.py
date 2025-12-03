@@ -21,8 +21,19 @@ def get(key):
       b += c
   return v
 
+def reset():
+  s = ''
+
+def delete(key):
+  pass
+
 if __name__ == '__main__':
   set('date', '12/3/2025')
   set('name', 'keva')
   set('version', 'zero')
+  set('version', 'two')
+  set('trash', 'qweqwe')
+  delete('trash')
   print('name:', get('name'))
+  print('trash:', get('trash'))
+
