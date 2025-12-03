@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='keva',
-    version='0.0.2',
+    version='0.0.3',
     packages=['keva'],
     description='key-value store',
     author='yousero',

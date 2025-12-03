@@ -1,11 +1,24 @@
 
 s = ''
 
+def escape(data):
+  data = data.replace(':', '\\:')
+  data = data.replace(',', '\\,')
+  return data
+
+def deescape(data):
+  data = data.replace('\\:', ':')
+  data = data.replace('\\,', ',')
+  return data
+
 def set(key, value):
   global s
+  key = escape(key)
+  value = escape(value)
   s += key + ':' + value + ','
 
 def get(key):
+  key = deescape(key)
   k = ''
   v = ''
   b = ''
@@ -27,6 +40,7 @@ def reset():
 
 def delete(key):
   global s
+  key = deescape(key)
   k = ''
   v = ''
   b = ''

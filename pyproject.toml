@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "keva"
-version = "0.0.2"
+version = "0.0.3"
 description = "Minimal key-value store with in-memory and string backends"
 authors = ["yousero <youser8@gmail.com>"]
 license = "MIT"
