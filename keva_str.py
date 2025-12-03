@@ -25,7 +25,24 @@ def reset():
   s = ''
 
 def delete(key):
-  pass
+  global s
+  k = ''
+  v = ''
+  b = ''
+  r = ''
+  for c in s:
+    if c == ':':
+      k = b
+      b = ''
+    elif c == ',':
+      if k != key:
+        v = b
+        r += k + ':' + v + ','
+      b = ''
+    else:
+      b += c
+  s = r
+
 
 if __name__ == '__main__':
   set('date', '12/3/2025')
