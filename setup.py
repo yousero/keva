@@ -1,9 +1,9 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name='keva',
     version='0.0.1',
-    packages=find_packages(),
+    packages=['keva'],
     description='key-value store',
     author='yousero',
     author_email='youser8@gmail.com',
