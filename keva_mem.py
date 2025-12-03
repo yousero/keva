@@ -8,13 +8,16 @@ def get(key):
   return mem.get(key, '')
 
 def reset():
+  global mem
   mem = {}
 
 def delete(key):
-  del mem[key]
+  mem.pop(key, None)
 
-if __name__ == '__main__':
-  set('date', '12/3/2025')
+if __name__ == '__main__':  
+  set('olddate', '12/3/2025')
+  reset()
+  set('date', '12/4/2025')
   set('name', 'keva')
   set('version', 'zero')
   set('version', 'two')

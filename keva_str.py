@@ -22,6 +22,7 @@ def get(key):
   return v
 
 def reset():
+  global s
   s = ''
 
 def delete(key):
@@ -45,6 +46,8 @@ def delete(key):
 
 
 if __name__ == '__main__':
+  set('olddate', '12/3/2025')
+  reset()
   set('date', '12/3/2025')
   set('name', 'keva')
   set('version', 'zero')
