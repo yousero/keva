@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "keva"
+version = "0.0.1"
+description = "Minimal key-value store with in-memory and string backends"
+authors = ["yousero <youser8@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/yousero/keva"
+repository = "https://github.com/yousero/keva"
+keywords = ["key-value", "store", "kv", "memory"]
+
+packages = [
+    { include = "keva" },
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+

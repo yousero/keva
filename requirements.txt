@@ -1,0 +1,7 @@
+# Install the keva package in editable mode
+# Usage:
+#   pip install -r requirements.txt
+#
+-e .
+
+
